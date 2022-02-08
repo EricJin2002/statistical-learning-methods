@@ -1,4 +1,5 @@
 function [w,b,a] = perceptron_dual(x,y,eta)
+%f(x)=sign(w'*x+b)
     [n,N]=size(x);
     a=zeros(1,N);
     b=0;
