@@ -5,5 +5,5 @@ y=[1 1 -1 -1 1 -1 -1 1 1 1];
 scatter(x(1,y==1),x(2,y==1),'r')
 hold on
 scatter(x(1,y==-1),x(2,y==-1),'b')
-[w,b,a]=perceptron_dual(x,y,1)
+[w,b,a]=perceptron_dual(x,y)
 fimplicit(@(x1,x2)w'*[x1;x2]+b,[0 5])
